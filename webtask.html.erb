@@ -1,44 +1,44 @@
-<html>
+  <html>
 
-  <head>
+    <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <link rel="stylesheet" href="./normalize.css">
-
-
-    <link rel="stylesheet" href="./webtask.css">
+      <link rel="stylesheet" href="./normalize.css">
 
 
-    <title>GOYA Inquiry page</title>
-
-    <style type="text/css">  </style>
+      <link rel="stylesheet" href="./webtask.css">
 
 
+      <title>GOYA Inquiry page</title>
 
-  </head>
-
-
-  <header class="header clearfix">
+      <style type="text/css"> </style>
 
 
-       <a href="test">
 
-         <img id="glogo" src="./images/glogo.png" class="image">
+    </head>
 
-       </a>
 
-     </header>
+    <header class="header clearfix">
 
-  <body>
 
-    <h1> <strong> Welcome to GOYA database </strong></h1>
+        <a href="test">
 
-    <% require 'pg' %>
+          <img id="glogo" src="./images/glogo.png" class="image">
 
-    <% connection = PG::connect(dbname: "goya") %>
+        </a>
 
-    <% connection.internal_encoding = "UTF-8" %>
+      </header>
+
+      <body>
+
+        <h1> <strong> Welcome to GOYA database </strong></h1>
+
+        <% require 'pg' %>
+
+        <% connection = PG::connect(dbname: "goya") %>
+
+        <% connection.internal_encoding = "UTF-8" %>
 
 
     <form action="indicate.cgi" method="POST">
